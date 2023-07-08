@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>burger</title>
+</head>
+<body>
+    <div class="cont">
+        <div class="burgerImg">
+            <div class="burgerImg__block burgerImg__bread">
+                <img src="img/breadImgTop.png" alt="">
+            </div>
+                <div class="burgerImg__block burgerImg__becon displayNone">
+                    <img src="img/bekonImg.png" alt="">
+                </div>
+                <div class="burgerImg__block burgerImg__onion displayNone">
+                    <img src="img/onionImg.png" alt="">
+                </div>
+                <div class="burgerImg__block burgerImg__salad displayNone">
+                    <img src="img/saladImg.png" alt="">
+                </div>
+            <div class="burgerImg__block burgerImg__cheese displayNone">
+                <img src="img/cheeseImg.png" alt="">
+            </div>
+            <div class="burgerImg__block burgerImg__cotlet displayNone">
+                <img src="img/coutlet-gov.png" alt="">
+            </div>
+
+            <div class="burgerImg__block burgerImg__tomato displayNone">
+                <img src="img/tomatoImg.png" alt="">
+            </div>
+            <div class="burgerImg__block burgerImg__salad displayNone">
+                <img src="img/saladImg.png" alt="">
+            </div>
+            <div class="burgerImg__block burgerImg__pickles displayNone">
+                <img src="img/pikuliImg.png" alt="">
+            </div>
+            <div class="burgerImg__block burgerImg__bread">
+                <img src="img/breadImgBottom.png" alt="">
+            </div>
+            <div class="totalComment displayNone" ></div>
+
+        </div>
+        <div class="wrapper">
+            <form action="#" id="createBurgerForm" class="createBurgerForm">
+                <h1 class="createBurgerForm__heading">Собери свой бургер</h1>
+                <fieldset class="createBurgerField">
+                    <h3 class="createBurgerField__heading">Выбери размер бургера</h3>
+                    <label for="bigBurger" class="check">
+                        <input type="radio" name="size" id="bigBurger" value="Big" class="createBurgerField__input" data-price="100" data-calories="100" data-weight="20" />
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Большой</div>
+                    </label>
+                    <label for="mediumBurger" class="check">
+                        <input type="radio" name="size" id="mediumBurger" value="Medium" class="createBurgerField__input" data-price="75" data-calories="75" data-weight="15" />
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Средний</div>
+                    </label>
+                    <label for="smallburger" class="check">
+                        <input type="radio" name="size" id="smallburger" value="Small" class="createBurgerField__input" data-price="50" data-calories="50" data-weight="10" checked>
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Малый</div>
+                    </label>
+                </fieldset>
+
+                <fieldset class="createBurgerField">
+                    <h3 class="createBurgerField__heading">
+                        Выбери котлету
+                    </h3>
+                    <label for="beefCotlet" class="check">
+                        <input type="radio" name="cotlet" id="beefCotlet" value="Beef__Cotlet" class="createBurgerField__input" data-price="300" data-calories="300" data-weight="100" />
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Говяжья котлета</div>
+                    </label>
+                    <label for="chickenCotlet" class="check">
+                        <input type="radio" name="cotlet" id="chickenCotlet" value="Chicken__Cotlet" class="createBurgerField__input" data-price="100" data-calories="100" data-weight="100" checked/>
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Куриная котлета</div>
+                    </label>
+                    <label for="porkCotlet" class="check">
+                        <input type="radio" name="cotlet" id="porkCotlet" value="Pork__Cotlet" class="createBurgerField__input" data-price="200" data-calories="400" data-weight="100" />
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Свиная котлета</div>
+                    </label>
+                </fieldset>
+
+                <fieldset class="createBurgerField">
+                    <h3 class="createBurgerField__heading">
+                        Добавь ингридиенты
+                    </h3>
+                    <label for="pickles" class="check">
+                        <input type="checkbox" name="ingridients" id="pickles" value="Pickles" class="createBurgerField__input" data-price="20" data-calories="20" data-weight="30" />
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Маринованый огурец</div>
+                    </label>
+                    <label for="tomato" class="check">
+                        <input type="checkbox" name="ingridients" id="tomato" value="Tomato" class="createBurgerField__input" data-price="20" data-calories="20" data-weight="30" />
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Помидор</div>
+                    </label>
+    
+                    <label for="salad" class="check">
+                        <input type="checkbox" name="ingridients" id="salad" value="Salad" class="createBurgerField__input" data-price="30" data-calories="5" data-weight="5" />
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Салат</div>
+                    </label>
+                    <label for="onion" class="check">
+                        <input type="checkbox" name="ingridients" id="onion" value="Onion" class="createBurgerField__input" data-price="20" data-calories="20" data-weight="30" checked/>
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Лук</div>
+                    </label>
+                    <label for="cheese" class="check">
+                        <input type="checkbox" name="ingridients" id="cheese" value="Cheese" class="createBurgerField__input" data-price="20" data-calories="20" data-weight="30" checked/>
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Сыр</div>
+                    </label>
+                    <label for="becon" class="check">
+                        <input type="checkbox" name="ingridients" id="becon" value="Becon" class="createBurgerField__input" data-price="20" data-calories="20" data-weight="30" />
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Бекон</div>
+                    </label>
+                </fieldset>
+
+                <fieldset class="createBurgerField">
+                    <h3 class="createBurgerField__heading">
+                        Добавь Соусы
+                    </h3>
+                    <label for="mayo" class="check">
+                        <input type="checkbox" name="sauce" id="mayo" value="Mayo" class="createBurgerField__input" data-price="20" data-calories="20" data-weight="30" />
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Майонез</div>
+                    </label>
+                    <label for="ketchup" class="check">
+                        <input type="checkbox" name="sauce" id="ketchup" value="Ketchup" class="createBurgerField__input" data-price="20" data-calories="20" data-weight="30" checked/>
+                        <div class="check__checkmark"></div>
+                        <div class="check__body">Кечуп</div>
+                    </label>
+                </fieldset>
+                <fieldset class="createBurgerField">
+                    <label for="comment" class="comment">
+                        <input type="text" name="comment" id="comment" placeholder="Комментарий к заказу">
+    
+                    </label>
+                </fieldset>
+            </form>
+        </div>
+        <button class="createBurgerBtn">Собрать Бургер</button>
+
+        
+
+        <!-- <div class="stepper">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div> -->
+
+        <div class="burgerInfoWrap">
+            <p class="burgerInfo">Итого:
+                <span id="totalPrice" class="burgerInfo__price">0</span>
+            </p>
+            <p class="burgerInfo">Вес:
+                <span id="totalCalories" class="burgerInfo__weight">0</span>
+            </p>
+            <p class="burgerInfo">Калорий:
+                <span id="totalWeight" class="burgerInfo__calories">0</span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

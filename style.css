@@ -1,0 +1,187 @@
+.cont {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    justify-content: center;
+  }
+}
+
+.createBurgerForm {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .createBurgerForm {
+    width: 50%;
+  }
+}
+
+.stepper {
+  align-self: center;
+}
+
+.burgerInfoWrap {
+  align-self: center;
+}
+@media (max-width: 1024px) {
+  .burgerInfoWrap {
+    position: absolute;
+    top: 1200px;
+    left: 15px;
+  }
+}
+
+.burgerImg {
+  position: fixed;
+  top: 30px;
+  align-self: auto;
+  max-width: 400px;
+}
+@media (max-width: 1024px) {
+  .burgerImg {
+    position: absolute;
+    top: 1300px;
+  }
+}
+
+#comment {
+  border: none;
+  width: 100%;
+}
+#comment:focus {
+  outline: none !important;
+}
+
+.totalComment {
+  margin-top: 50px;
+  width: 400px;
+  height: 100px;
+  border: 1px solid #000;
+}
+
+.burgerImg__block {
+  margin-bottom: -25px;
+}
+.burgerImg__block img {
+  width: 100%;
+}
+.burgerImg__block__bread {
+  background-color: rgb(151, 142, 12);
+}
+.burgerImg__block__cotlet {
+  background-color: brown;
+}
+.burgerImg__block__tomato {
+  background-color: red;
+}
+.burgerImg__block__cheese {
+  background-color: rgb(240, 240, 6);
+}
+
+.displayNone {
+  display: none;
+}
+
+.createBurgerBtn {
+  align-self: center;
+  min-width: 300px;
+  min-height: 60px;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: orange;
+  background: linear-gradient(90deg, orange 0%, orange 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px orange;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  margin: 50px 0;
+}
+@media (max-width: 1024px) {
+  .createBurgerBtn {
+    margin: 50px 0 400px 0;
+  }
+}
+
+.createBurgerField {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: none;
+  border-bottom: 1px solid rgb(180, 180, 180);
+  padding-bottom: 25px;
+}
+.createBurgerField:last-child {
+  margin-bottom: 25px;
+}
+
+.check {
+  display: inline-block;
+  position: relative;
+  padding-right: 40px;
+  cursor: pointer;
+}
+.check__checkmark {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.check__checkmark:after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: -8px;
+  width: 11px;
+  height: 20px;
+  border: solid orange;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease, left 0.25s ease;
+}
+.check__body {
+  color: #333;
+  line-height: 1.4;
+  font-size: 16px;
+  transition: font-weight 0.25s ease;
+}
+
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.check input:checked ~ .check__checkmark {
+  background: inherit;
+}
+.check input:checked ~ .check__checkmark:after {
+  opacity: 1;
+  left: 8px;
+}
+.check input:checked ~ .check__body {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
